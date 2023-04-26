@@ -1,0 +1,3 @@
+docker search microsoft
+docker pull rapidfort/microsoft-sql-server-2019-ib
+docker run -d -p 14333:1433 --name SqlServer -e "SA_PASSWORD=Prueba@1234" -e "ACCEPT_EULA=Y" rapidfort/microsoft-sql-server-2019-ib
